@@ -1,0 +1,242 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Advent Pro', sans-serif;
+	color: grey;
+}
+
+header{
+	width: 100%;
+	height: 700px;
+	background-image: url(file:///Users/Morgana/Documents/Coderhouse/07_Clase7_portafolio/Portafolio-TP7/imagenes/fondo_.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+nav{
+	padding: 20px;
+}
+	.menu{
+		display: flex;
+		justify-content: center;
+		list-style: none;	
+		margin: 0;
+
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
+
+		.menu a{
+			text-decoration: none;
+			padding: 30px;
+			color: #fff;
+			font-weight: 700;
+			text-transform: uppercase;
+			border-bottom: 1px solid #fff;
+			-webkit-transition: color 0.5s ease;
+		    -moz-transition: color 0.5s ease;
+		    -o-transition: color 0.5s ease;
+			transition: color 0.5s ease;
+
+		}
+
+			.menu a:hover{
+				color: grey;
+			}
+
+		#hola{
+			display: block;
+			width: 500px;
+			top: 150px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			color: #fff;
+			position: absolute;
+			left: calc(50% - 250px);
+			
+		}
+
+		#hola h2{
+			font-family: 'Averia Sans Libre';
+			font-weight: 700;
+			font-size: 30px;
+			color: #fff;
+			letter-spacing: 0.5em;
+			text-transform: uppercase;
+			border: 1px solid #fff;
+			padding: 10px;
+		}
+
+		#hola h1{
+			font-family: 'Advent Pro', sans-serif;
+			font-weight: 700;
+			font-size: 170px;
+			color: lawngreen;
+			text-transform: uppercase;
+		}
+
+		#hola p{
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 25px;
+		}
+
+		#social-media{
+			text-align: center;
+			vertical-align: top;
+			font-size: 30px;
+			margin: 80px 0px 30px 0px;
+			position: relative;
+			display: flex;
+			justify-content: center;
+		}
+
+
+			#social-media a{
+				text-decoration: none;
+				color: #fff;
+				padding: 10px;
+				-webkit-transition: color 0.5s ease;
+			    -moz-transition: color 0.5s ease;
+			    -o-transition: color 0.5s ease;
+				transition: color 0.5s ease;
+			}
+
+			#social-media a:hover{
+				color: grey;
+			}
+
+	.about{
+			display: flex;
+			flex-direction: row;
+			margin: auto;
+			width: 40%;
+			text-align: center;
+			margin-top: 60px;
+			margin-bottom: 60px;
+		}
+
+		.about img{
+			border-radius: 100px;
+			width: 200px;
+			height: 200px;
+			margin-right: 20px;
+		}
+
+		.about article h2{
+			font-family: 'Averia Sans Libre';
+			font-weight: 700;
+			font-size: 20px;
+			letter-spacing: 0.5em;
+			text-transform: uppercase;
+			border: 1px solid grey;
+			padding: 10px;
+		}
+
+		.about article{
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 25px;
+		}
+
+		.about article p{
+			margin-top: 10px;
+			text-align: justify;
+		}
+
+		.portfolio{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+			.portfolio img{
+				padding: 5px;
+			}
+
+			.i1{ order: 1; }
+			.i2{ order: 2; }
+			.i3{ order: 3; }
+			.i4{ order: 4; }
+			.i5{ order: 5; }
+			.i6{ order: 6; }
+			.i7{ order: 7; }
+
+	.contact{
+		width: 80%;	
+		margin: auto;
+		text-align: center;
+		margin-top: 50px;
+		padding: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+		.contact i{
+			font-size: 30px;
+			display: block;
+		}
+
+		.contact form{
+			width: 60%;
+			background-color: white;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.contact h3{
+			margin: 20px 0px 10px 0px; 
+			display: inline-block;
+		}
+
+		.contact input, .contact textarea{
+			display: block;
+			vertical-align: top;
+			width: 100%;
+			height: 40px;
+		}
+
+		input::-webkit-input-placeholder {
+   			font-size: 12px;
+   			text-align: center;
+   			width: 50px;
+			height: 25px;
+   		}
+
+		input.enviar{ 
+			cursor: pointer; /*obliga a la clase a que aparezca la manito al posicionar el cursor*/
+			font-size: 12px;
+			width: 80px;
+			height: 30px;
+			display: inline-block;
+			margin-top: 30px;
+		}
+
+footer{
+	width: 100%;
+	height: 40px;
+	margin-top: 90px;
+	background-color: Gainsboro;
+	text-align: center;
+	display: inline-block;
+	padding-top: 20px;
+}
+
+@media (min-width: 400px) and (max-width: 900px){
+	
+	header{
+		background-size: 100% 800px;
+	}
+
+	.about{
+		width: 80%;
+	}
+
+}
+
+
